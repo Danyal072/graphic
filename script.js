@@ -36,6 +36,22 @@ function desktopCheck(){
         });
     }
 }
+
+const scrollDown = () => {
+    var scrollBtn = document.getElementById('scroll_button');
+    var body = document.querySelector('body');
+    scrollBtn.addEventListener('click', () => {
+        console.log("clicked");
+        body.scrollTo({
+            top: 833,
+            behavior: 'smooth',
+        })
+        
+    });
+}
+
+scrollDown();
+
 desktopCheck();
 
 
