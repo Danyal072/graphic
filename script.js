@@ -4,10 +4,10 @@ function desktopCheck(){
     }
     else{
         gsap.from("#pen", {
-            x: 2000,
+            x: 1500,
             duration: 1,
             delay: 0.1,
-            ease: "power1",
+            ease: "back",
         });
         gsap.from(['#p','#o', '#r', '#tf', '#li'],{
             scale: 0.9,
