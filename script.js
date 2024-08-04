@@ -31,13 +31,13 @@ function desktopCheck(){
             ease: "back",
         });
         gsap.from(['#p','#o', '#r', '#tf', '#li'],{
-            scale: 0.9,
-            duration: 1,
+            scale: 0.5,
+            duration: 0.5,
         })        
         gsap.from(['#right-cir','#left-cir'],{
             zIndex: 1,
-            scale: 0.9,
-            duration: 1,
+            scale: 0.5,
+            duration: 0.5,
             // duration: 1,
         
         })        
