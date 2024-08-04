@@ -1,0 +1,137 @@
+:root{
+    --border : 3.2rem solid white;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+#page1{
+        background-color: #000000f6;
+        background-image: url('../1.png');
+        background-size: cover;
+        /* mix-blend-mode:  screen; */
+        /* background-blend-mode: color-dodge;
+     */
+     width: 100%;
+    
+}
+*{
+    font-family: 'montserrat';
+}
+
+#text{
+    position: relative;
+    left: -30px;
+}
+#cirl{
+    position: relative;
+    top: 1rem;
+}
+#left-cir{
+    position: relative;
+    /* left: 0.88rem; */
+    
+}
+#right-cir{
+       position: relative;
+       /* left: -0.6rem; */
+}
+#left-cir > img{
+    height: 150px;
+    width:  90px;
+}
+#right-cir > img{
+    height: 150px;
+    width:  90px;
+}
+#pen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform: translate(45%, 8%);
+    /* background: #000; */
+}
+#tab-pin{
+    position: relative;
+    /* top: 1rem; */
+}
+#pen > img{
+    /* position: relative; */
+}
+
+#p {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+ 
+    background: linear-gradient(30deg,  #2c2a2ad7 80px, rgb(255, 69, 0) ); /* Adjust colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#o {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: transparent;
+ 
+    background: linear-gradient(-30deg,  #2c2a2ad7 100px, #ff4500 ); /* Adjust colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#r {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    color: #2c2a2ad7;
+}
+
+#tf{
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(150deg,  #2c2a2ad7 200px, orangered ); /* Adjust colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#li{
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(150deg,  #2c2a2ad7 150px, orangered  ); /* Adjust colors */
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#last-name{
+    color: #515050;
+}
+#preloader{
+    background-color: #000000f6;
+    background-image: url('../1.png');
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#like{
+    animation: key 1s infinite;
+}
+
+@keyframes key{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
