@@ -22,7 +22,6 @@ html, body{
 
 #text{
     position: relative;
-    left: -30px;
 }
 #cirl{
     position: relative;
@@ -46,6 +45,110 @@ html, body{
     height: 150px;
     width:  90px;
 }
+
+@media (max-width: 600px){
+    #name{
+        width: 100%;
+        font-size: 1rem;
+    }
+    #name > h1{
+        font-size: 1.5rem;
+    }
+
+    #cirl{
+        position: relative;
+        top: 0.2rem;
+        padding: 0.5rem .2rem;
+    }
+    #left-cir{
+        position: relative;
+        /* left: 0.88rem; */
+        
+    }
+    #right-cir{
+           position: relative;
+           z-index: 40;
+           /* left: -0.6rem; */
+    }
+    #left-cir > img{
+        height: 60px !important;
+        width:  80px !important;
+    }
+    #right-cir > img{
+        height: 60px !important;
+        width:  80px !important;
+    }
+    #text{
+        position: relative;
+        left: 0px !important; 
+    }
+
+    #p {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
+        -webkit-background-clip: text !important;
+        background-clip: text;
+    }
+    #o {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+    #r {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: #2c2a2ad7;
+    }
+    
+    #tf{
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(150deg,  #2c2a2ad7 70px, orangered ) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+    #li{
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(180deg,  #2c2a2ad7 50px, orangered  ) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+    #tab-pin{
+        position: relative;
+        /* top: 1rem; */
+    }
+    #pen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translate(60%, 8%) !important;
+        /* background: #000; */
+    }
+   
+    #pen-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -3.8rem !important;
+    }
+    #pen-img > img{
+        position: absolute;
+    }
+}
+
+
 #tab-pin{
     position: relative;
     /* top: 1rem; */
@@ -75,9 +178,8 @@ html, body{
     position: relative;
     display: inline-block;
     color: transparent;
- 
     background: linear-gradient(30deg,  #2c2a2ad7 80px, rgb(255, 69, 0) ); /* Adjust colors */
-    -webkit-background-clip: text;
+    -webkit-background-clip: text !important;
     background-clip: text;
 }
 #o {

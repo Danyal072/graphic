@@ -16,19 +16,27 @@
 
     </head>
     <body>
-        <div id="main">
+        <div id="main flex flex-col">
+           <div id="scroll-tbtn" class="w-[50px] h-[50px] absolute bg-slate-200 top-[48rem] right-5"><button class="text-center text-2xl p-2">⬆️</button></div>
+
+
+            <div id="page1" class="flex flex-col items-center justify-center h-screen w-full bg-slate-800 text-white max-sm:px-4">
            
-            <div id="page1" class="flex flex-col items-center justify-center h-screen w-full bg-slate-800 text-white">
+           
                 <div id="content" class="w-full flex flex-col items-center justify-center">
-                    <div id="name" class="w-[73%] flex relative top-[8rem]">
-                        <h1 class="text-4xl font-extrabold">Muhammad</h1>&nbsp;&nbsp;<h1 class="text-4xl font-semibold" id="last-name">Ahmed</h1>
+           
+           
+                    <div id="name" class="w-[69%] flex relative top-[8rem] max-sm:top-[2rem] max-sm:left-2">
+                        <h1 class="text-4xl sm:max-sm:text-2xl font-extrabold">Muhammad</h1>&nbsp;&nbsp;<h1 class="text-4xl font-semibold" id="last-name">Abdullah</h1>
                     </div>
-                    <div id="text" class="flex text-[16rem] font-extrabold ">
+           
+           
+                    <div id="text" class="flex text-[16rem] max-sm:text-[5rem] font-extrabold max-sm:left-[0px]">
                         <h1 id="p">p</h1>
                         <h1 id="o">o</h1>
                     <h1 id="r">r</h1>
                     <h1 id="tf">tf</h1> 
-                    <div id="cirl" class=" flex flex-row items-center justify-center gap-0">
+                    <div id="cirl" class=" flex flex-row items-center justify-center">
                         <div id="left-cir">
                             <img src="img/svg.png" alt="">
                         </div> 
@@ -37,7 +45,7 @@
                         </div>
                     </div>
                     <h1 id="li">li</h1>
-                    <div id="cirl" class=" flex flex-row items-center justify-center gap-0">
+                    <div id="cirl" class=" flex flex-row items-center justify-center">
                         <div id="left-cir">
                             <img src="img/svg.png" alt="">
                         </div> 
@@ -46,14 +54,14 @@
                         </div>
                     </div> 
                 </div>
-                <div id="pen" class="z-10">
+                <div id="pen" class="z-10 max-sm:animate-bounce">
                     <div id="pen-img">
                         <img src="b.png" alt="">
                     </div>
                 </div>
             </div>
-            <div id="scroll_button" class="relative top-24">
-                <button class="border border-white px-4 py-4 rounded-full">Scroll<br>Down<br><svg id="downArrow" class="w-[50px] h-[50px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+            <div id="scroll_button" class="relative top-24 max-sm:top-[12rem]">
+                <button class="border border-white p-4 max-sm:px-2 max-sm:py-2 max-sm:text-sm rounded-full flex flex-col items-center justify-center">Scroll<br>Down<br><svg id="downArrow" class="w-[50px] h-[50px] max-sm:w-[20px] max-sm:h[20px]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
                     <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(16,16)"><path d="M7,1v11.20313l-2.28125,-2.1875l-0.6875,0.71875l3.46094,3.33203l3.47656,-3.33203l-0.6875,-0.71875l-2.28125,2.18359v-11.19922z"></path></g></g>
                     </svg></button>
             </div>
