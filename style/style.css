@@ -35,6 +35,7 @@ html, body{
 }
 #right-cir{
        position: relative;
+       z-index: 40;
        /* left: -0.6rem; */
 }
 #left-cir > img{
@@ -45,22 +46,28 @@ html, body{
     height: 150px;
     width:  90px;
 }
+#tab-pin{
+    position: relative;
+    /* top: 1rem; */
+}
 #pen{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 50%;
     height: 50%;
     transform: translate(45%, 8%);
     /* background: #000; */
 }
-#tab-pin{
-    position: relative;
-    /* top: 1rem; */
+#pen-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -12.5rem;
 }
-#pen > img{
-    /* position: relative; */
+#pen-img > img{
+    position: absolute;
 }
 
 #p {
