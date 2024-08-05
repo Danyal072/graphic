@@ -47,141 +47,6 @@ html, body{
     width:  90px;
 }
 
-@media (max-width: 600px){
-    #name{
-        width: 100%;
-        font-size: 1rem;
-    }
-    #name > h1{
-        font-size: 1.5rem;
-    }
-
-    #cirl{
-        position: relative;
-        top: 0.2rem;
-        padding: 0.5rem .2rem;
-    }
-    #left-cir{
-        position: relative;
-        /* left: 0.88rem; */
-        
-    }
-    #right-cir{
-           position: relative;
-           z-index: 40;
-           /* left: -0.6rem; */
-    }
-    #left-cir > img{
-        height: 60px !important;
-        width:  80px !important;
-    }
-    #right-cir > img{
-        height: 60px !important;
-        width:  80px !important;
-    }
-    #text{
-        position: relative;
-        left: 0px !important; 
-    }
-
-    #p {
-        font-weight: bold;
-        position: relative;
-        display: inline-block;
-        color: transparent;
-        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
-        -webkit-background-clip: text !important;
-        background-clip: text;
-    }
-    #o {
-        font-weight: bold;
-        position: relative;
-        display: inline-block;
-        color: transparent;
-        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
-        -webkit-background-clip: text;
-        background-clip: text !important;
-    }
-    #r {
-        font-weight: bold;
-        position: relative;
-        display: inline-block;
-        color: #2c2a2ad7;
-    }
-    
-    #tf{
-        display: inline-block;
-        color: transparent;
-        background: linear-gradient(150deg,  #2c2a2ad7 70px, orangered ) !important; /* Adjust colors */
-        -webkit-background-clip: text;
-        background-clip: text !important;
-    }
-    #li{
-        display: inline-block;
-        color: transparent;
-        background: linear-gradient(180deg,  #2c2a2ad7 50px, orangered  ) !important; /* Adjust colors */
-        -webkit-background-clip: text;
-        background-clip: text !important;
-    }
-    #tab-pin{
-        position: relative;
-        /* top: 1rem; */
-    }
-    #pen{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform: translate(60%, 8%) !important;
-        /* background: #000; */
-    }
-   
-    #pen-img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: -3.8rem !important;
-    }
-    #pen-img > img{
-        position: absolute;
-    }
-    #leftPic{
-        position: relative;
-        padding: 1rem;
-        width: 100%;
-        height: 100vh;
-    }
-    #leftPic > #penimg{
-        position: relative;
-        width: 100%;
-        
-    }
-    #penimg > img{
-        position: relative;
-        rotate: -40deg !important;
-        scale: 2;
-    }
-    #penimg > #shadow{  
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: .5;
-        box-shadow: inset 0px 30px 20px 10px #0000009d;
-    }
-    #penimg > #dot{
-        filter: blur(2rem) !important;
-        border-radius: 50px;
-        opacity: .5;
-        scale: 1;
-        transform: rotate(90deg) translate(2rem, -5rem) !important; 
-        background: linear-gradient(315deg, #ff4a01, #e63e01);
-        box-shadow:  -20px -20px 60px #d93b01,
-                     20px 20px 60px #ff4f01;
-    }
-}
 
 
 #tab-pin{
@@ -222,7 +87,7 @@ html, body{
     position: relative;
     display: inline-block;
     color: transparent;
- 
+    
     background: linear-gradient(-40deg,  #2c2a2ad7 160px, orange ); /* Adjust colors */
     -webkit-background-clip: text;
     background-clip: text;
@@ -325,7 +190,7 @@ html, body{
     transform:  translate(17rem, 6rem);
     background: linear-gradient(315deg, #ff4a01, #e63e01);
     box-shadow:  inset -20px -20px 60px #d93b01,
-                 20px 20px 60px #ff4f01;
+    20px 20px 60px #ff4f01;
 }
 #right{
     display: flex;
@@ -360,6 +225,7 @@ html, body{
 #page3 > #title{
     padding: 1rem 0;
     height: 12vh;
+    width: 100% !important;
     color: #151515e1;
 }
 #page3 > #skill-set{
@@ -367,10 +233,11 @@ html, body{
     align-items: flex-start;
     justify-content: flex-start;
     gap: 15rem;
-    top: 5rem;
+    top: 10rem;
     position: relative;
     /* top: 1rem; */
-    height: 70vh;
+    height: 65vh;
+    left: 5rem;
     width: 100%;
     /* background-color: #515050; */
     color: #000;
@@ -398,4 +265,240 @@ html, body{
 }
 #bar{
     background-color: orangered;
+}
+@media (max-width: 600px){
+    #name{
+        width: 100%;
+        font-size: 1rem;
+    }
+    #name > h1{
+        font-size: 1.5rem;
+    }
+
+    #cirl{
+        position: relative;
+        top: 1.667vw;
+        padding: 0.5rem .2rem;
+    }
+    #left-cir{
+        position: relative;
+        /* left: 0.88rem; */
+        
+    }
+    #right-cir{
+           position: relative;
+           z-index: 40;
+           /* left: -0.6rem; */
+    }
+    #left-cir > img{
+        height: 12vw !important;
+        width:  5vw !important;
+    }
+    #right-cir > img{
+        height: 12vw !important;
+        width:  5vw !important;
+    }
+    #text{
+        position: relative;
+        left: 0px !important; 
+    }
+
+    #p {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
+        -webkit-background-clip: text !important;
+        background-clip: text;
+    }
+    #o {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(-30deg,  #2c2a2ad7, #ff4500 400px) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+    #r {
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        color: #2c2a2ad7;
+    }
+    
+    #tf{
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(150deg,  #2c2a2ad7 70px, orangered ) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+    #li{
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(180deg,  #2c2a2ad7 50px, orangered  ) !important; /* Adjust colors */
+        -webkit-background-clip: text;
+        background-clip: text !important;
+    }
+ 
+    #pen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translate(50%, 0%) !important;
+        /* background: #000; */
+    }
+   
+    #pen-img{
+        position: absolute;
+        width: 100%;
+        height: 100%;   
+        top: -12vw !important;
+    }
+    #pen-img > img{
+        position: absolute;
+    }
+    #page2{
+        background-color: #000000f6; 
+        background-image: url('../1.png');
+        color: #fff;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 100%;
+        position: relative;
+    }
+    #leftPic{
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+    }
+    #leftPic > #penimg{
+        position: relative;
+        width: 100%;
+        
+    }
+    #penimg > img{
+        position: relative;
+        rotate: -45deg !important;
+        scale: 2;
+    }
+    #penimg > #shadow{  
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        box-shadow: inset 0px 30px 20px 10px #0000009d;
+    }
+    #penimg > #dot{
+        filter: blur(2rem) !important;
+        border-radius: 50px;
+        opacity: .5;
+        scale: 1;
+        transform: rotate(90deg) translate(2rem, -5rem) !important; 
+        background: linear-gradient(315deg, #ff4a01, #e63e01);
+        box-shadow:  -20px -20px 60px #d93b01,
+                     20px 20px 60px #ff4f01;
+    }
+    #right{
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+    }
+    #right > #content-text{
+        
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+    }
+    #right > #content-text > h1{
+        
+        font-size: 10.667vw;
+    }
+    #content-text > #tagline > h3{
+        /* color: orangered; */
+        font-size: 3.5vw;
+    }
+    #content-text > #tagline > #orange{
+        color: orangered;
+        font-size: 3.5vw;
+    }
+    #page3{
+        background-color: #000000f6; 
+        background-image: url('/img/background/texture.jpg');
+        color: #fff;
+        background-size: cover;
+        display: flex;
+        /* justify-content: center; */
+        align-items: flex-start;
+        padding: 0 8vw;
+        height: 70vh;
+        width: 100%;
+        position: relative;
+    }
+    #page3 > #title{
+        padding: 2rem 0;
+        height: 12vh;
+        width: 100% !important;
+        color: #151515e1;
+        
+    }
+   
+    #page3 > #skill-set{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 15vw;
+        top: 5vw;
+        position: relative;
+        /* top: 1rem; */
+        height: 65vh;
+        left: 1vw;
+        width: 100%;
+        /* background-color: #515050; */
+        color: #000;
+    }
+    #left-skill > #title > h1{
+        font-family: 'Dancing Script', cursive;
+    }
+    #right-skill > #title > h1{
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    #skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        height: 40vh;
+        font-weight: bold;
+    }
+    #skills > #skills > #skill1 > h1{
+        font-size: 1rem;
+    }
+    #rskills{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        height: 40vh;
+        font-weight: bold;
+    }
+    #bar{
+        background-color: orangered;
+    }
+    #skill-name{
+        font-size: 3.5vw;
+    }
 }
