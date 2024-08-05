@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style/output.css">
         <link rel="stylesheet" href="style/style.css">
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -17,10 +18,9 @@
     </head>
     <body>
         <div id="main flex flex-col">
-           <div id="scroll-tbtn" class="w-[50px] h-[50px] absolute bg-slate-200 top-[48rem] right-5"><button class="text-center text-2xl p-2">⬆️</button></div>
+           
 
-
-            <div id="page1" class="flex flex-col items-center justify-center h-screen w-full bg-slate-800 text-white max-sm:px-4">
+            <div id="page1" class="flex flex-col items-center justify-center h-screen w-full bg-slate-800 text-white max-sm:px-4 z-20">
            
            
                 <div id="content" class="w-full flex flex-col items-center justify-center">
@@ -66,12 +66,107 @@
                     </svg></button>
             </div>
         </div>
-
-        <div id="page2" class="h-screen w-full bg-red-600">
+        <div id="page-tomake" class="h-screen w-full">
+            <div id="title" class="flex flex-col items-center justify-center h-screen w-full">
+                <h1 class="text-6xl font-bold">I am here to make</h1>
+                <h1 class="text-6xl font-bold">your dream come true</h1>
+            </div>
 
         </div>
-        <div id="page2" class="h-screen w-full">
+        <div id="page2" class="h-screen w-full flex flex-row items-center justify-center max-sm:flex-col">
+            <div id="leftPic" class="w-full h-screen flex items-center relative">
+                <div id="penimg">
+                    <img src="b.png" alt="" class="z-0 object-fill">
+                    <div id="dot" class="absolute w-[100px] h-[100px] bg-slate-50 max-sm:w-[50px] max-sm:h-[50px]"></div>
+                    <div id="shadow" class="absolute w-[620.104px] h-[41px] rotate-[-50deg] scale-[2.4] max-sm:scale-[2] max-sm:absolute max-sm:rotate-[-40deg]"></div>
+                </div>
+            </div>
 
+            <div id="right" class="w-full h-screen flex flex-col items-center justify-center">
+                <div id="content-text" class="flex flex-col items-start justify-center">
+                    <h1 class="relative text-9xl font-bold left-[-10rem]">Still there?</h1>
+                    <div id="tagline" class="relative w-[120%] flex gap-2 text-[2.3rem] font-semibold left-[-20rem]">
+                        <h3>I know you are more excited to see</h3><h3 id="orange">my work</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page3" class="h-screen w-full flex flex-col items-start">
+            <div id="title">
+                <h1 class="text-[7.4rem] font-bold">Skill & Passion</h1>
+            </div>
+            <div id="skill-set" class="flex flex-row items-center justify-evenly">
+                <div id="left-skill" class="flex flex-col">
+                    <div id="title"><h1 class="text-6xl">Designer Skill</h1></div>
+                    <div id="skills" class="flex flex-col justify-between relative top-[2rem]">
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">UI/UX Design</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[80%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">Adobe Photoshop</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[95%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">Adobe Illustrator</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[60%] h-[10px] "></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">CoralDraw</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[40%] h-[10px]"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">Blender</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[40%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-skill" class="flex flex-col">
+                    <div id="title"><h1 class="text-6xl">Developer Skill</h1></div>
+                    <div id="rskills" class="relative top-[2rem]">
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">WordPress</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[80%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">HTML</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[100%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">CSS</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[90%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">JS</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[60%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                        <div id="skill1" class="relative">
+                            <h1 class="text-2xl">GitHub</h1>
+                            <div id="skill-bar" class="w-[100%] h-[10px] bg-black">
+                                <div id="bar" class="w-[70%] h-[10px] bg-red-600"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

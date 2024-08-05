@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 :root{
     --border : 3.2rem solid white;
 }
@@ -146,6 +147,40 @@ html, body{
     #pen-img > img{
         position: absolute;
     }
+    #leftPic{
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+        height: 100vh;
+    }
+    #leftPic > #penimg{
+        position: relative;
+        width: 100%;
+        
+    }
+    #penimg > img{
+        position: relative;
+        rotate: -40deg !important;
+        scale: 2;
+    }
+    #penimg > #shadow{  
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .5;
+        box-shadow: inset 0px 30px 20px 10px #0000009d;
+    }
+    #penimg > #dot{
+        filter: blur(2rem) !important;
+        border-radius: 50px;
+        opacity: .5;
+        scale: 1;
+        transform: rotate(90deg) translate(2rem, -5rem) !important; 
+        background: linear-gradient(315deg, #ff4a01, #e63e01);
+        box-shadow:  -20px -20px 60px #d93b01,
+                     20px 20px 60px #ff4f01;
+    }
 }
 
 
@@ -178,7 +213,7 @@ html, body{
     position: relative;
     display: inline-block;
     color: transparent;
-    background: linear-gradient(30deg,  #2c2a2ad7 80px, rgb(255, 69, 0) ); /* Adjust colors */
+    background: linear-gradient(10deg,  #2c2a2ad7 150px, orange ); /* Adjust colors */
     -webkit-background-clip: text !important;
     background-clip: text;
 }
@@ -188,7 +223,7 @@ html, body{
     display: inline-block;
     color: transparent;
  
-    background: linear-gradient(-30deg,  #2c2a2ad7 100px, #ff4500 ); /* Adjust colors */
+    background: linear-gradient(-40deg,  #2c2a2ad7 160px, orange ); /* Adjust colors */
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -202,14 +237,14 @@ html, body{
 #tf{
     display: inline-block;
     color: transparent;
-    background: linear-gradient(150deg,  #2c2a2ad7 200px, orangered ); /* Adjust colors */
+    background: linear-gradient(150deg,  #2c2a2ad7 200px, orange ); /* Adjust colors */
     -webkit-background-clip: text;
     background-clip: text;
 }
 #li{
     display: inline-block;
     color: transparent;
-    background: linear-gradient(150deg,  #2c2a2ad7 150px, orangered  ); /* Adjust colors */
+    background: linear-gradient(150deg,  #2c2a2ad7 150px, orange  ); /* Adjust colors */
     -webkit-background-clip: text;
     background-clip: text;
 }
@@ -243,4 +278,124 @@ html, body{
     100%{
         transform: rotate(360deg);
     }
+}
+
+#page2{
+    background-color: #000000f6; 
+    background-image: url('../1.png');
+    color: #fff;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+#leftPic{
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#leftPic > #penimg{
+    position: relative;
+    width: 100%;
+    
+}
+#penimg > img{
+    position: relative;
+    rotate: -50deg;
+    scale: 2;
+}
+#penimg > #shadow{  
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0px 20px 14px 3px #000000e3;
+}
+#penimg > #dot{
+    filter: blur(3rem);
+    border-radius: 50px;
+    opacity: .5;
+    scale: .8;
+    transform:  translate(17rem, 6rem);
+    background: linear-gradient(315deg, #ff4a01, #e63e01);
+    box-shadow:  inset -20px -20px 60px #d93b01,
+                 20px 20px 60px #ff4f01;
+}
+#right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+#right > #content-text{
+    
+    width: 100%;
+    height: 100%;
+}
+#content-text > #tagline > #orange{
+    color: orangered;
+}
+
+#page3{
+    background-color: #000000f6; 
+    background-image: url('/img/background/texture.jpg');
+    color: #fff;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding: 0 7rem;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page3 > #title{
+    padding: 1rem 0;
+    height: 12vh;
+    color: #151515e1;
+}
+#page3 > #skill-set{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15rem;
+    top: 5rem;
+    position: relative;
+    /* top: 1rem; */
+    height: 70vh;
+    width: 100%;
+    /* background-color: #515050; */
+    color: #000;
+}
+#left-skill > #title > h1{
+    font-family: 'Dancing Script', cursive;
+}
+#right-skill > #title > h1{
+    font-family: 'Dancing Script', cursive;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    height: 40vh;
+    font-weight: bold;
+}
+#rskills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    height: 40vh;
+    font-weight: bold;
+}
+#bar{
+    background-color: orangered;
 }
