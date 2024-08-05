@@ -210,8 +210,8 @@ html, body{
 }
 
 #page3{
-    background-color: #ffffffd3; 
-    background-image: url('/img/background/texture.jpg');
+    /* background-color: #ffffffd3;  */
+    background-image: url('./img/background/texture.jpg');
     color: #fff;
     background-size: cover;
     display: flex;
