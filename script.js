@@ -16,7 +16,7 @@ function desktopCheck(){
         
             y: -5,
             scaleY: 0.8,
-            duration: 2,
+            duration: 1.5,
             repeat: -1,
             yoyo: true,
             ease: "power1",
@@ -49,8 +49,8 @@ function desktopCheck(){
         gsap.from('#downArrow', {
         
             y: -8,
-            scaleY: 0.8,
-            duration: 2,
+            scaleY: 0.7,
+            duration: 1.5,
             repeat: -1,
             yoyo: true,
             ease: "power1",
