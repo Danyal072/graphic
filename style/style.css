@@ -39,12 +39,12 @@ html, body{
        /* left: -0.6rem; */
 }
 #left-cir > img{
-    height: 150px;
-    width:  90px;
+    height: 15vh;
+    width:  4vw;
 }
 #right-cir > img{
-    height: 150px;
-    width:  90px;
+    height: 15vh;
+    width:  4vw;
 }
 
 
@@ -266,6 +266,20 @@ html, body{
 #bar{
     background-color: orangered;
 }
+
+#page4{
+    background-image: url('../img/background/texture.jpg') !important;
+}
+#background{
+    background-color: #5755550d;
+}
+
+#right_side > h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
 @media (max-width: 600px){
     #name{
         width: 100%;

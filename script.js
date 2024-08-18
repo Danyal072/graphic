@@ -55,6 +55,20 @@ function desktopCheck(){
             yoyo: true,
             ease: "power1",
         });
+        gsap.from('#bar', {
+            width: 0,
+            duration: 1,
+            delay: 1,
+            ease: "power1",
+            scrollTrigger: {
+                trigger: '#bar',
+                scrollTrigger: '#skill-set',
+                start: 'top 80%',
+                end: 'top 80%',
+                scrub: 3,
+                markers: false,
+            }
+        })
     }
 }
 
@@ -72,11 +86,35 @@ const scrollDown = () => {
 }
 
 
+function canvasCreate() {
+    window.onload = function() {
+        const canvas = document.getElementById('rightCanvas');
+        const ctx = canvas.getContext('2d');
+        const width = canvas.width;
+        const height = canvas.height;
+        const radius = width / 2 - 10; // Adjust the radius to fit within the canvas
+    
+        // Create a gradient
+        const gradient = ctx.createLinearGradient(0, 0, width, height);
+        gradient.addColorStop(0, 'red');
+        gradient.addColorStop(1, 'orange');
+    
+        // Draw the circle using curves
+        ctx.beginPath();
+        const startAngle = 29.8;
+        const endAngle = 6.49 * Math.PI;
+        ctx.arc(width / 2, height / 2, radius, startAngle, endAngle);
+        ctx.lineWidth = 10;
+        ctx.strokeStyle = gradient;
+        ctx.stroke();
+    };
+    
+}
 
 
+
+canvasCreate();
 scrollDown();
-
-
 desktopCheck();
 
 
